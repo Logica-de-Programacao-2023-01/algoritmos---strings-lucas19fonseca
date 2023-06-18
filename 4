@@ -1,1 +1,22 @@
+package main
 
+import (
+	"fmt"
+	"strings"
+)
+
+func main() {
+
+	var string1, string2 string
+
+	fmt.Print("Informe uma string: ")
+	fmt.Scan(&string1)
+	fmt.Print("Informe outra string: ")
+	fmt.Scan(&string2)
+
+	if strings.Compare(string1, string2) == 0 {
+		fmt.Printf("%s e %s são iguais!", string1, string2)
+	} else {
+		fmt.Printf("%s e %s são diferentes!", string1, string2)
+	}
+}
