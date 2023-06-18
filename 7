@@ -1,1 +1,30 @@
+package main
 
+import (
+	"fmt"
+	"strings"
+)
+
+func main() {
+
+	var str string
+
+	fmt.Print("Digite uma string: ")
+	fmt.Scanln(&str)
+
+	temnum := false
+
+	for _, caracteres := range str {
+
+		if strings.ContainsAny(string(caracteres), "0123456789") {
+			temnum = true
+			break
+		}
+	}
+	if temnum {
+		fmt.Print("A string possui pelo menos um número!")
+	} else {
+		fmt.Print("A string não possui número!")
+	}
+
+}
