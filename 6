@@ -1,1 +1,24 @@
+package main
 
+import (
+	"bufio"
+	"fmt"
+	"os"
+	"strings"
+)
+
+func main() {
+
+	fmt.Println("Digite uma string para fazermos sua contagem de palavras: ")
+
+	scanner := bufio.NewScanner(os.Stdin)
+	scanner.Scan()
+	linha := scanner.Text()
+
+	palavras := strings.Fields(linha)
+
+	contagem := len(palavras)
+
+	fmt.Printf("A frase possui %d palavras!", contagem)
+
+}
