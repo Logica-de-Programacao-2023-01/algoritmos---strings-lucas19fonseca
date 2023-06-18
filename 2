@@ -1,1 +1,16 @@
+package main
 
+import (
+	"fmt"
+	"strings"
+)
+
+func main() {
+
+	word := "H e l l o"
+
+	newword := strings.ReplaceAll(word, " ", "")
+
+	fmt.Printf("A palavra (%s) sem os espaços, fica (%s)", word, newword)
+
+}
