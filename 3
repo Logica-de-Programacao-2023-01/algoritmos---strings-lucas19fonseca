@@ -1,1 +1,23 @@
+package main
 
+import (
+	"fmt"
+	"strings"
+)
+
+func main() {
+
+	word := "Hello"
+	var antigo string
+	var novo string
+
+	fmt.Print("Informe qual caractere deseja substituir na palavra Hello: ")
+	fmt.Scan(&antigo)
+	fmt.Print("Qual caractere deseja colocar no lugar desse? ")
+	fmt.Scan(&novo)
+
+	newword := strings.Replace(word, antigo, novo, -1)
+
+	fmt.Printf("%s passou a ser %s", word, newword)
+
+}
