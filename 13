@@ -14,8 +14,8 @@ func main() {
 
 	for i := 0; i < len(str)-1; i++ {
 		if strings.Compare(string(str[i]), string(str[i+1])) >= 0 {
-			fmt.Println("Não está em ordem crescente!")
-			return
+			fmt.Println("Não está em ordem crescente!!")
+			returne
 		}
 	}
 	fmt.Println("Está em ordem crescente!")
