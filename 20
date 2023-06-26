@@ -23,11 +23,11 @@ func main() {
 		fmt.Println("A string não está em CamelCase.")
 	}
 
-	numerodepalavras := 0
+	numerodeword := 0
 	for _, c := range s {
 		if unicode.IsUpper(c) {
-			numerodepalavras++
+			numerodeword++
 		}
 	}
-	fmt.Printf("A string contém %d palavras.\n", numerodepalavras)
+	fmt.Printf("A string contém %d palavras.\n", numerodeword)
 }
