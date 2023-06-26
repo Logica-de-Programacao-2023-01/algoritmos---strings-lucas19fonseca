@@ -13,10 +13,10 @@ func main() {
 	fmt.Print("Insira uma string: ")
 	fmt.Scanln(&str)
 
-	vogais := []string{"A", "a", "e", "E", "i", "I", "o", "O", "U", "u"}
+	vowels := []string{"A", "a", "e", "E", "i", "I", "o", "O", "U", "u"}
 
-	for _, vogal := range vogais {
+	for _, vogal := range vowels {
 		str = strings.ReplaceAll(str, vogal, "")
 	}
-	fmt.Printf("A string sem vogais fica: %s", str)
+	fmt.Printf("A string sem vowels fica: %s", str)
 }
