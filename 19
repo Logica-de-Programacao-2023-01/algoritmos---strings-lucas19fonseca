@@ -19,5 +19,5 @@ func main() {
 		phrase += car
 	}
 
-	fmt.Println(frase)
+	fmt.Println(phrase)
 }
