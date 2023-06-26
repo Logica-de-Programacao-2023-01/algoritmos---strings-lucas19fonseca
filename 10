@@ -15,7 +15,7 @@ func main() {
 	fmt.Scanln(&str2)
 
 	if len(str) != len(str2) {
-		fmt.Printf("%s e %s não são anagramas!", str, str2)
+		fmt.Printf("%s e %s não são anagramas!!!", str, str2)
 
 		return
 	}
