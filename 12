@@ -7,19 +7,19 @@ import (
 
 func main() {
 
-	var palavra string
+	var word string
 
-	fmt.Print("Digite uma palavra: ")
-	fmt.Scanln(&palavra)
+	fmt.Print("Digite uma word: ")
+	fmt.Scanln(&word)
 
 	reverso := ""
-	for i := len(palavra) - 1; i >= 0; i-- {
-		reverso += string(palavra[i])
+	for i := len(word) - 1; i >= 0; i-- {
+		reverso += string(word[i])
 	}
 
-	if strings.EqualFold(palavra, reverso) {
-		fmt.Printf("%s é um palíndromo:", palavra)
+	if strings.EqualFold(word, reverso) {
+		fmt.Printf("%s é um palíndromo:", word)
 	} else {
-		fmt.Printf("%s não é um palíndromo:", palavra)
+		fmt.Printf("%s não é um palíndromo:", word)
 	}
 }
